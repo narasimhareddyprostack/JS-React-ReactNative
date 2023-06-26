@@ -4,11 +4,17 @@
 
 <body>
     <h2>Login Page</h2>
-    <form onsubmit="validate_Data()">
-        <label>User Name</label>
-        <input type="text" id="uName" /> <br><br>
-        <label>Password:::</label>
-        <input type="text" /> <br><br>
+    <form onsubmit="return validate_Data()">
+        <div>
+            <label>User Name</label>
+            <input type="text" id="uName" /> <br>
+            <span style="color:red" id="uNameMessage"></span>
+        </div>
+        <div>
+            <label>Password:::</label>
+            <input type="text" id="uPassword" /> <br>
+            <span id="passwordMessage" style="color: red;"></span>
+        </div>
         <input type="submit" value="Login" />
     </form>
 </body>
